@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*{
+* {
     font-family: "Oswald", sans-serif;
     color: rgb(102, 102, 102);
 }
 
-body{
+body {
     background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.nav a{
+.nav a {
     text-decoration: none;
     color: rgb(102, 102, 102);
     font-weight: 500;
@@ -23,18 +23,17 @@ body{
     margin-right: 2%;
 }
 
-.lang-select{
+.lang-select {
     display: flex;
     justify-content: end;
 }
 
-.lang-select a{
+.lang-select a {
     text-decoration: none;
     color: rgb(102, 102, 102);
     font-weight: 500;
     font-size: 23px;
     margin-right: 10px;
-
 }
 
 .navigation {
@@ -54,16 +53,16 @@ body{
     padding-top: 50px; /* Adjust according to the height of the navigation bar */
 }
 
-#active-lang{
+#active-lang {
     color: rgb(234, 14, 14);
 }
 
-#active{
+#active {
     color: rgb(234, 14, 14);
 }
 
-#red{
-        color: rgb(234, 14, 14);
+#red {
+    color: rgb(234, 14, 14);
 }
 
 .container {
@@ -91,7 +90,7 @@ hr {
     margin-top: 0;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-top: 4%;
 }
@@ -140,10 +139,10 @@ h1{
 
 .project {
     margin: 20px;
-    width: 500px;
+    max-width: 500px; /* Adjusted width */
+    width: 100%;
     transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
 }
-
 
 .project img {
     width: 100%;
@@ -192,12 +191,12 @@ h1{
 
 .competition-card {
     margin: 20px;
-    width: 350px;
+    max-width: 350px; /* Adjusted width */
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-
 
 .competition-card img {
     width: 100%;
@@ -220,7 +219,7 @@ h1{
     text-align: center;
 }
 
-ul{
+ul {
     margin-left: 0;
 }
 
@@ -292,5 +291,102 @@ textarea {
 .social-links img:hover {
     transform: scale(1.1);
 }
+.lang-select {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-right: 15px; /* Add margin-right */
+}
 
+.lang-select a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+    font-size: 23px;
+    margin-top: 5px; /* Add margin between the buttons */
+}
+
+@media only screen and (max-width: 768px) {
+    .lang-select {
+        flex-direction: column; /* Arrange items in a column on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .lang-select a {
+        margin-top: 0; /* Reset margin for smaller screens */
+        margin-bottom: 5px; /* Add margin between the buttons */
+    }
+}
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .nav a {
+        font-size: 20px;
+    }
+
+    .lang-select a {
+        font-size: 23px;
+        margin-right: 5px;
+    }
+
+    .me {
+        margin-right: 10px;
+    }
+
+    .timeline-item {
+        padding: 10px;
+    }
+
+    .project {
+        margin: 10px;
+        max-width: 300px;
+    }
+
+    .competition-card {
+        margin: 10px;
+        max-width: 250px;
+    }
+
+    .btn,
+    .btnn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #home {
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order for smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .me {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        margin-right: 20px; /* Add margin-right */
+    }
     
+    .me h1 {
+        text-align: center; /* Center the text */
+        margin-top: 0; /* Remove top margin for the heading */
+    }
+
+    img {
+        max-width: 100%; /* Ensure the image is responsive */
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        margin: 5px; /* Add some spacing between links */
+    }
+}
+
