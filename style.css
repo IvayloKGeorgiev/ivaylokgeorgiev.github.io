@@ -224,22 +224,31 @@ ul {
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add flexbox display */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact-form form{
+    width: 93%;
 }
 
 .form-group {
     margin-bottom: 20px;
+    width: 100%; /* Ensure form inputs take full width */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    width: 100%; /* Ensure labels take full width */
 }
 
 input[type="text"],
