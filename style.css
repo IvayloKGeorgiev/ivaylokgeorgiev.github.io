@@ -75,7 +75,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 5%; /* Adjust as needed */
+    margin-left: 5%;
 }
 
 img {

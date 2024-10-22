@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function isInViewport(element, offset) {
         const rect = element.getBoundingClientRect();
         return (
-            rect.top >= -offset &&
+            rect.top >= offset &&
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset
         );
     }
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navButtons.forEach(button => {
             const targetId = button.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            if (targetElement && isInViewport(targetElement, 0)) { // Adjust offset to 100px for example
+            if (targetElement && isInViewport(targetElement, -170)) { // Adjust offset to 100px for example
                 // Remove 'id="active"' from any element that has it
                 const activeElement = document.querySelector('[id="active"]');
                 if (activeElement) {
