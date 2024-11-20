@@ -383,6 +383,7 @@ textarea {
         flex-direction: column-reverse; /* Reverse the order for smaller screens */
         align-items: center;
         text-align: center;
+        margin-top: 5%;
     }
 
     .me {
