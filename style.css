@@ -15,10 +15,6 @@ body {
     width: 100%;
 }
 
-#photo{
-    margin-top: 10%;
-}
-
 .nav a {
     text-decoration: none;
     color: rgb(102, 102, 102);
@@ -73,7 +69,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:8% !important;
 }
 
 .me {
@@ -331,8 +326,9 @@ textarea {
         margin-bottom: 5px; /* Add margin between the buttons */
     }
     #photo{
-        margin-top: 50px;
+        margin-top: 5% !important;
     }
+    
 }
 /* Media Queries for responsiveness */
 @media only screen and (max-width: 768px) {
@@ -374,8 +370,9 @@ textarea {
         height: 30px;
     }
     #photo{
-        margin-top: 50px;
+        margin-top: 5% !important;
     }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -384,7 +381,6 @@ textarea {
         flex-direction: column-reverse; /* Reverse the order for smaller screens */
         align-items: center;
         text-align: center;
-        margin-top: 5%;
     }
 
     .me {
@@ -411,7 +407,8 @@ textarea {
         margin: 5px; /* Add some spacing between links */
     }
     #photo{
-        margin-top: 50px;
+        margin-top: 5% !important;
     }
+    
 }
 
