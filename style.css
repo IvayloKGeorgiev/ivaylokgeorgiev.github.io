@@ -325,6 +325,9 @@ textarea {
         margin-top: 0; /* Reset margin for smaller screens */
         margin-bottom: 5px; /* Add margin between the buttons */
     }
+    #photo{
+        margin-top: 20px;
+    }
 }
 /* Media Queries for responsiveness */
 @media only screen and (max-width: 768px) {
@@ -365,6 +368,9 @@ textarea {
         width: 30px;
         height: 30px;
     }
+    #photo{
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -397,6 +403,9 @@ textarea {
 
     .nav a {
         margin: 5px; /* Add some spacing between links */
+    }
+    #photo{
+        margin-top: 20px;
     }
 }
 
